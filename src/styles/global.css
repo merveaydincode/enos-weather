@@ -1,12 +1,78 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Variable.ttf') format('truetype');
-    font-weight: 400 700;
-    font-style: normal;
+:root {
+  /* Renkler */
+  --primary-color: #296573;
+  --on-primary-color: #FFFFFF;
+  --title-color: #313131;
+  --icon-color: #555555;
+  --border-color: #DBDFE9;
+  --card-border-color: #F1F1F4;
+  --text-primary: #071437;
+  --text-secondary: #4B5675;
+  --text-muted: #252F4A;
+  --text-inverted: #FFFFFF;
+
+  /* Tipografi */
+  --font-family: 'Inter, sans-serif';
+  --font-size-base: 16px;
+  --font-size-xl: 32px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  background-color: var(--text-on-primary);
+  font-family: var(--font-family);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0px 163px;
+  background-color: var(--primary-color);
+}
+
+.header-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-inverted);
+}
+
+.header-logo {
+  height: 29px;
+}
+
+/* Tablet cihazlar için (768px - 1024px arası) */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0px 40px; /* Tabletler için padding'i azaltıyoruz */
   }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #FFFFFF; 
+
+  .header-title {
+    font-size: 1.5rem; /* Tabletler için font boyutunu küçültüyoruz */
   }
-  
+
+  .header-logo {
+    height: 25px; /* Tabletler için logo boyutunu küçültüyoruz */
+  }
+}
+
+/* Mobil cihazlar için (max-width: 767px) */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column; /* Mobilde başlık ve logo alt alta gelsin */
+    align-items: flex-start; /* Mobilde içerikler sola hizalanır */
+    height: auto; /* Yükseklik otomatik olsun */
+    padding: 10px 20px; /* Mobil için padding'i düzenliyoruz */
+  }
+
+  .header-title {
+    font-size: var(--font-size-base); /* Mobilde font boyutunu küçültüyoruz */
+    margin-bottom: 10px; /* Başlık ve logo arasında boşluk */
+  }
+
+  .header-logo {
+    height: 20px; /* Mobilde logo boyutunu küçültüyoruz */
+  }
+}
