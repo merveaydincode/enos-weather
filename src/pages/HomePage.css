@@ -1,54 +1,89 @@
 .home-page {
     display: flex;
-    flex-direction: column;
+    flex: 1;
     height: 100vh;
-  }
-  
-  .container {
+    background-color: var(--on-primary-color); /* Arka plan rengi */
+}
+
+.body {
     display: flex;
-    flex: 1;
-  }
-  
-  .image-container, .text-container {
-    flex: 1;
-  }
-  
-  .image-container {
+    padding: 120px 163px; 
+}
+
+.image {
     display: flex;
-    justify-content: center;
+    width: 640px;
+    height: 454.23px;
+    border: 1px solid var(--border-color); /* Kenarlık rengi */
+}
+
+.box-container {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 680px;
+    max-width: 360px; 
+}
+
+.box {
+    border: 1px solid var(--border-color); /* Kenarlık rengini var(--border-color) ile ayarla */
+    border-radius: 10px; /* Kenarlık yuvarlama */
+}
+
+.search {
+    display: flex;
     align-items: center;
-  }
-  
-  .image {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  
-  .text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .text-box {
-    background-color: var(--on-primary-color); 
-    padding: 40px;
-    border-radius: 12px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--border-color); 
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .text-box h1 {
-    margin-bottom: 10px;
-    font-size: var(--font-size-xl); 
-  }
-  
-  .text-box p {
+    height: 46px;
+    border-radius: 10px;
+    padding: 0 14px;
+    border: 1px solid var(--border-color); /* Kenarlık rengi */
+    background-color: var(--on-primary-color); /* Arka plan rengi */
+}
+
+.search input {
+    flex: 1;
+    border: none; /* İç kenarlık yok */
     font-size: var(--font-size-base);
-  }
-  
+    font-weight: var(--font-weight-normal);
+    line-height: 14px;
+    color: var(--text-muted);
+    outline: none; /* Kenar çizgisi yok */
+    background: transparent; /* Arka planı şeffaf */
+}
+
+.search input::placeholder {
+    color: var(--text-muted);
+    font-size: var(--font-size-base);
+}
+
+.search-icon {
+    color: var(--icon-color);
+}
+
+.content {
+    padding: 0 40px;
+    border-radius: 12px;
+    height: 186px;
+    display: flex;
+    border: 1px solid var(--border-color); /* Kenarlık rengi */
+    flex-direction: column;
+    justify-content: center; /* Dikey ortalama */
+    align-items: center; /* Yatay ortalama */
+    text-align: center; 
+}
+.text {
+    color: var(--text-primary);
+    height: 106px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.text h2 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+text p {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+}
