@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Enos Weather 🌤️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Enos Weather** belirli bir şehir için günlük hava durumu tahminlerini sunan bir web uygulamasıdır. React ve Redux kullanılarak geliştirilmiştir ve Weatherbit API ile hava durumu verilerini sağlar.
 
-## Available Scripts
+## Proje Demo
 
-In the project directory, you can run:
+Projenin canlı versiyonunu şu adresten görüntüleyebilirsiniz:  
+🔗 [Enos Weather](https://merveaydincode.github.io/enos-weather)
 
-### `npm start`
+## Özellikler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Günlük Hava Tahmini**: Seçilen şehir için detaylı günlük hava durumu tahminleri.
+- **Redux State Yönetimi**: Hava durumu verilerinin yönetimi için Redux kullanımı.
+- **Weatherbit API Entegrasyonu**: Hava durumu verileri anında API'den çekilir.
+- **Responsive Tasarım**: Uygulama hem masaüstü hem mobil cihazlar için optimize edilmiştir.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Kurulum
 
-### `npm test`
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Depoyu klonlayın**:
+   ```bash
+   git clone https://github.com/merveaydincode/enos-weather.git
+   ```
 
-### `npm run build`
+2. **Proje dizinine gidin**:
+   ```bash
+   cd enos-weather
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Gerekli bağımlılıkları yükleyin**:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Uygulamayı çalıştırın**:
+   ```bash
+   npm start
+   ```
+   Bu komut, uygulamayı geliştirme modunda başlatır. Tarayıcıda `http://localhost:3000` adresine giderek uygulamanızı görüntüleyebilirsiniz.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Kullanım
 
-### `npm run eject`
+- Şehir adını girerek seçilen şehir için hava durumu tahminlerini anında alabilirsiniz.
+- API'den güncel hava durumu bilgileri gelir ve Redux store'da yönetilir.
+- Uygulama, hem günlük hem de ilerleyen günler için hava tahmini sunar.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Kullanılan Teknolojiler
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**: Kullanıcı arayüzünün oluşturulması.
+- **Redux**: Uygulamanın state yönetiminde.
+- **Weatherbit API**: Hava durumu verilerini almak için kullanılan API.
+- **GitHub Pages**: Uygulamanın barındırılması.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Proje Yapısı
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `src/`: Uygulamanın ana kaynak dosyaları.
+  - `components/`: Uygulamanın çeşitli bileşenleri.
+  - `redux/`: Redux ile ilgili dosyalar.
+  - `App.tsx`: Ana uygulama bileşeni.
+  
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
