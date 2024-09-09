@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/enos-weather/static/css/main.c849a72e.css",
+    "main.js": "/enos-weather/static/js/main.d08fc818.js",
+    "static/js/453.ade28e4b.chunk.js": "/enos-weather/static/js/453.ade28e4b.chunk.js",
+    "static/media/error.svg": "/enos-weather/static/media/error.4648c3929678be8147a8f8458d01885c.svg",
+    "static/media/default.svg": "/enos-weather/static/media/default.281733e75c0af0bd286295068adaae56.svg",
+    "static/media/loading.svg": "/enos-weather/static/media/loading.a3423017ec9823f453e4b1a7787b3043.svg",
+    "index.html": "/enos-weather/index.html",
+    "main.c849a72e.css.map": "/enos-weather/static/css/main.c849a72e.css.map",
+    "main.d08fc818.js.map": "/enos-weather/static/js/main.d08fc818.js.map",
+    "453.ade28e4b.chunk.js.map": "/enos-weather/static/js/453.ade28e4b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c849a72e.css",
+    "static/js/main.d08fc818.js"
+  ]
+}
