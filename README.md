@@ -4,6 +4,7 @@
 
 ## Proje Demo
 Proje, tamamen responsive olarak tasarlanmış olup, mobil cihazlar uyumludur.
+
 Projenin canlı versiyonunu şu adresten görüntüleyebilirsiniz:  
 🔗 [Enos Weather](https://merveaydincode.github.io/enos-weather)
 
