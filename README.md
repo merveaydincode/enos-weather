@@ -3,7 +3,7 @@
 **Enos Weather** belirli bir şehir için günlük hava durumu tahminlerini sunan bir web uygulamasıdır. React ve Redux kullanılarak geliştirilmiştir ve Weatherbit API ile hava durumu verilerini sağlar.
 
 ## Proje Demo
-
+Proje, tamamen responsive olarak tasarlanmış olup, mobil cihazlar uyumludur.
 Projenin canlı versiyonunu şu adresten görüntüleyebilirsiniz:  
 🔗 [Enos Weather](https://merveaydincode.github.io/enos-weather)
 
